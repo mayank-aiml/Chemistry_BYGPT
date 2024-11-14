@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redox Reactions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+        h1, h2, h3 {
+            color: #007bff;
+        }
+        p {
+            line-height: 1.6;
+        }
+        .mode-toggle {
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .mode-toggle:hover {
+            background-color: #0056b3;
+        }
+        .formula {
+            background-color: #f4f4f9;
+            padding: 10px;
+            border-radius: 8px;
+            margin: 20px 0;
+            font-weight: bold;
+            color: #007bff;
+            text-align: center;
+        }
+        .dark-mode {
+            background-color: #2c2c2c;
+            color: #f1f1f1;
+        }
+        .dark-mode h1, .dark-mode h2, .dark-mode h3 {
+            color: #63a4ff;
+        }
+        .dark-mode .formula {
+            background-color: #333;
+            color: #63a4ff;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <button class="mode-toggle" onclick="toggleMode()">Toggle Dark Mode</button>
+    <h1>Redox Reactions</h1>
+    <p>
+        Redox reactions, or oxidation-reduction reactions, are chemical processes in which electrons are transferred between species. These reactions are essential in a variety of biological, environmental, and industrial processes.
+    </p>
+
+    <h2>Key Concepts in Redox Reactions</h2>
+
+    <!-- Oxidation and Reduction -->
+    <h3>1. Oxidation and Reduction</h3>
+    <p><strong>Oxidation</strong> is the process in which an element loses electrons, leading to an increase in its oxidation state. Conversely, <strong>Reduction</strong> is the process in which an element gains electrons, decreasing its oxidation state.</p>
+    <ul>
+        <li><strong>Oxidizing Agent</strong>: The substance that gains electrons and is reduced.</li>
+        <li><strong>Reducing Agent</strong>: The substance that loses electrons and is oxidized.</li>
+    </ul>
+
+    <!-- Oxidation Numbers -->
+    <h3>2. Oxidation Numbers</h3>
+    <p>The oxidation number represents the effective charge of an atom in a molecule or compound. Rules for assigning oxidation numbers include:</p>
+    <ul>
+        <li>Elements in their elemental state have an oxidation number of 0 (e.g., O<sub>2</sub>, N<sub>2</sub>).</li>
+        <li>For ions, the oxidation number equals the charge (e.g., Na<sup>+</sup> = +1).</li>
+        <li>Oxygen generally has an oxidation number of -2 (except in peroxides where it's -1).</li>
+    </ul>
+
+    <!-- Balancing Redox Reactions -->
+    <h3>3. Balancing Redox Reactions</h3>
+    <p>Redox reactions can be balanced using the <strong>half-reaction method</strong>, which involves separating the oxidation and reduction reactions, balancing each separately, and then combining them. The steps include:</p>
+    <ol>
+        <li>Identify and write the half-reactions for oxidation and reduction.</li>
+        <li>Balance the atoms in each half-reaction, including oxygen and hydrogen.</li>
+        <li>Balance the charges by adding electrons to one side of each half-reaction.</li>
+        <li>Multiply each half-reaction by an appropriate factor so that the electrons are equal.</li>
+        <li>Combine the half-reactions and cancel out identical species on both sides.</li>
+    </ol>
+
+    <!-- Electrochemical Cells -->
+    <h3>4. Electrochemical Cells</h3>
+    <p>Redox reactions are the basis for electrochemical cells, which generate electricity through chemical reactions. There are two primary types:</p>
+    <ul>
+        <li><strong>Galvanic (Voltaic) Cells</strong>: Generate electrical energy from spontaneous redox reactions.</li>
+        <li><strong>Electrolytic Cells</strong>: Use electrical energy to drive non-spontaneous redox reactions.</li>
+    </ul>
+
+    <!-- Standard Electrode Potentials -->
+    <h3>5. Standard Electrode Potentials</h3>
+    <p>The tendency of a species to gain or lose electrons in an electrochemical cell is measured by its <strong>standard electrode potential (E°)</strong>. These potentials are referenced against the standard hydrogen electrode (SHE), which is assigned a potential of 0 volts.</p>
+    <p>The <strong>cell potential</strong> (E<sub>cell</sub>) is calculated as:</p>
+    <div class="formula">E<sub>cell</sub> = E°(cathode) - E°(anode)</div>
+
+    <!-- Applications of Redox Reactions -->
+    <h2>Applications of Redox Reactions</h2>
+    <p>Redox reactions are central to numerous applications:</p>
+    <ul>
+        <li><strong>Batteries</strong>: Galvanic cells provide power in batteries, including alkaline and lithium-ion batteries.</li>
+        <li><strong>Metallurgy</strong>: Reduction reactions are used in extracting metals from ores.</li>
+        <li><strong>Photosynthesis</strong>: Plants use redox reactions to convert carbon dioxide and water into glucose and oxygen.</li>
+        <li><strong>Corrosion</strong>: Iron oxidizes to form rust through redox processes in the presence of moisture and oxygen.</li>
+    </ul>
+
+    <!-- Important Equations in Redox Chemistry -->
+    <h2>Important Equations in Redox Chemistry</h2>
+    <ul>
+        <li><strong>Cell Potential</strong>: E<sub>cell</sub> = E°(cathode) - E°(anode)</li>
+        <li><strong>Nernst Equation</strong>: E = E° - (RT/nF) ln(Q)</li>
+        <li><strong>Faraday's Law</strong>: m = (ItM) / (nF)</li>
+    </ul>
+
+    <h2>Real-World Implications of Redox Chemistry</h2>
+    <p>Redox reactions are crucial in energy storage, biological processes, and environmental chemistry. Innovations in redox chemistry impact energy storage solutions, such as electric vehicles and renewable energy technologies, while understanding redox processes aids in preventing corrosion and protecting infrastructure.</p>
+</div>
+
+<script>
+    function toggleMode() {
+        document.body.classList.toggle("dark-mode");
+    }
+</script>
+
+</body>
+</html>

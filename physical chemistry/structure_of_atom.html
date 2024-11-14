@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Structure of Atom - Chemistry</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+        
+        h1, h2, h3 {
+            color: #007bff;
+        }
+        p {
+            line-height: 1.6;
+        }
+        .mode-toggle {
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .mode-toggle:hover {
+            background-color: #0056b3;
+        }
+        .formula {
+            background-color: #f4f4f9;
+            padding: 10px;
+            border-radius: 8px;
+            margin: 20px 0;
+            font-weight: bold;
+            color: #007bff;
+            text-align: center;
+        }
+        .dark-mode {
+            background-color: #2c2c2c;
+            color: #f1f1f1;
+        }
+        .dark-mode h1, .dark-mode h2, .dark-mode h3 {
+            color: #63a4ff;
+        }
+        .dark-mode .formula {
+            background-color: #333;
+            color: #63a4ff;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <button class="mode-toggle" onclick="toggleMode()">Toggle Dark Mode</button>
+    <h1>Structure of Atom</h1>
+    <p>
+        The structure of the atom forms the foundation of chemistry and physics. Atoms are the basic building blocks of matter, consisting of subatomic particles. This chapter covers atomic models, quantum mechanics, and electronic configuration.
+    </p>
+
+    <h2>Key Concepts in Atomic Structure</h2>
+
+    <!-- Discovery of Subatomic Particles -->
+    <h3>1. Discovery of Subatomic Particles</h3>
+    <p>Atoms are composed of three main subatomic particles:</p>
+    <ul>
+        <li><strong>Electrons</strong>: Negatively charged particles discovered by J.J. Thomson.</li>
+        <li><strong>Protons</strong>: Positively charged particles found in the nucleus, discovered by Ernest Rutherford.</li>
+        <li><strong>Neutrons</strong>: Neutral particles discovered by James Chadwick.</li>
+    </ul>
+
+    <!-- Rutherford’s Atomic Model -->
+    <h3>2. Rutherford’s Atomic Model</h3>
+    <p>Rutherford’s gold foil experiment revealed the nuclear structure of the atom:</p>
+    <ul>
+        <li>Most of the atom's mass is concentrated in a small, dense nucleus.</li>
+        <li>Electrons orbit the nucleus in vast empty space.</li>
+    </ul>
+    <p>However, this model could not explain the stability of atoms or their energy levels.</p>
+
+    <!-- Bohr’s Atomic Model -->
+    <h3>3. Bohr’s Atomic Model</h3>
+    <p>To address the limitations of Rutherford’s model, Niels Bohr proposed a new model:</p>
+    <ul>
+        <li>Electrons move in fixed orbits or shells with quantized energy levels.</li>
+        <li>Electrons can jump between energy levels by absorbing or emitting photons.</li>
+    </ul>
+    <div class="formula">E = hv</div>
+    <p>where <em>h</em> is Planck's constant and <em>v</em> is the frequency of emitted or absorbed radiation.</p>
+
+    <!-- Quantum Mechanical Model of Atom -->
+    <h3>4. Quantum Mechanical Model of Atom</h3>
+    <p>The quantum mechanical model introduced probabilistic distributions instead of defined orbits:</p>
+    <ul>
+        <li>Electrons occupy regions called <em>orbitals</em> where they are likely to be found.</li>
+        <li>The model is based on Schrödinger’s wave equation:</li>
+    </ul>
+    <div class="formula">HΨ = EΨ</div>
+    <p>where <em>H</em> is the Hamiltonian operator, <em>Ψ</em> is the wave function, and <em>E</em> is the energy.</p>
+
+    <!-- Quantum Numbers -->
+    <h3>5. Quantum Numbers</h3>
+    <p>Quantum numbers describe the properties and position of electrons in an atom:</p>
+    <ul>
+        <li><strong>Principal Quantum Number (n)</strong>: Determines the energy level or shell.</li>
+        <li><strong>Azimuthal Quantum Number (l)</strong>: Determines the subshell (s, p, d, f).</li>
+        <li><strong>Magnetic Quantum Number (m<sub>l</sub>)</strong>: Determines the orientation of the orbital.</li>
+        <li><strong>Spin Quantum Number (m<sub>s</sub>)</strong>: Describes the electron’s spin.</li>
+    </ul>
+
+    <!-- Electronic Configuration -->
+    <h3>6. Electronic Configuration</h3>
+    <p>The electronic configuration describes the arrangement of electrons in an atom's orbitals. It follows the Aufbau principle, Pauli exclusion principle, and Hund's rule:</p>
+    <ul>
+        <li><strong>Aufbau Principle</strong>: Electrons fill orbitals in order of increasing energy.</li>
+        <li><strong>Pauli Exclusion Principle</strong>: No two electrons can have the same set of quantum numbers.</li>
+        <li><strong>Hund’s Rule</strong>: Electrons occupy orbitals singly before pairing up.</li>
+    </ul>
+
+    <!-- Important Calculations in Atomic Structure -->
+    <h2>Important Calculations in Atomic Structure</h2>
+    <ul>
+        <li><strong>Wavelength and Frequency</strong>: Related by the equation c = λν, where <em>c</em> is the speed of light, <em>λ</em> is the wavelength, and <em>ν</em> is the frequency.</li>
+        <li><strong>Energy of Photons</strong>: Calculated as E = hv.</li>
+        <li><strong>Radius of Electron Orbits</strong>: Bohr's model calculates the radius of orbits for hydrogen-like atoms.</li>
+    </ul>
+
+    <!-- Applications of Atomic Models -->
+    <h2>Applications of Atomic Models</h2>
+    <p>Atomic models have broad applications in science and technology, including:</p>
+    <ul>
+        <li><strong>Quantum Computing</strong>: The probabilistic nature of quantum mechanics underpins quantum computation.</li>
+        <li><strong>Spectroscopy</strong>: The electronic structure helps in identifying elements and compounds.</li>
+        <li><strong>Nuclear Energy</strong>: Knowledge of atomic structure aids in nuclear fission and fusion research.</li>
+    </ul>
+
+    <h2>Significance of Studying Atomic Structure</h2>
+    <p>Understanding atomic structure is essential for fields like chemistry, physics, and material science. It explains the chemical behavior of elements, molecular interactions, and the principles behind advanced technologies.</p>
+</div>
+<script>
+    function toggleMode() {
+        document.body.classList.toggle("dark-mode");
+    }
+</script>
+
+</body>
+</html>

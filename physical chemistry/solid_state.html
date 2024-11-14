@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solid State Chemistry</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+        h1, h2, h3 {
+            color: #007bff;
+        }
+        p {
+            line-height: 1.6;
+        }
+        .mode-toggle {
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .mode-toggle:hover {
+            background-color: #0056b3;
+        }
+        .formula {
+            background-color: #f4f4f9;
+            padding: 10px;
+            border-radius: 8px;
+            margin: 20px 0;
+            font-weight: bold;
+            color: #007bff;
+            text-align: center;
+        }
+        .dark-mode {
+            background-color: #2c2c2c;
+            color: #f1f1f1;
+        }
+        .dark-mode h1, .dark-mode h2, .dark-mode h3 {
+            color: #63a4ff;
+        }
+        .dark-mode .formula {
+            background-color: #333;
+            color: #63a4ff;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <button class="mode-toggle" onclick="toggleMode()">Toggle Dark Mode</button>
+    <h1>Solid State Chemistry</h1>
+    <p>
+        Solid State Chemistry explores the properties, structures, and applications of solid materials, including metals, ceramics, semiconductors, and polymers. It forms the basis of material science and is crucial for understanding material properties.
+    </p>
+
+    <h2>Key Concepts in Solid State Chemistry</h2>
+
+    <!-- Types of Solids -->
+    <h3>1. Types of Solids</h3>
+    <p>Solids can be broadly categorized into four types based on bonding and structure:</p>
+    <ul>
+        <li><strong>Ionic Solids</strong>: Held together by ionic bonds. Example: NaCl.</li>
+        <li><strong>Covalent Solids</strong>: Atoms are bonded by covalent bonds. Example: Diamond.</li>
+        <li><strong>Metallic Solids</strong>: Metal atoms are held by metallic bonds. Example: Iron.</li>
+        <li><strong>Molecular Solids</strong>: Molecules are held by Van der Waals forces. Example: Ice.</li>
+    </ul>
+
+    <!-- Crystal Lattice and Unit Cells -->
+    <h3>2. Crystal Lattice and Unit Cells</h3>
+    <p>The arrangement of atoms in a solid forms a <strong>crystal lattice</strong>. The smallest repeating unit of a lattice is called a <strong>unit cell</strong>.</p>
+    <p>Common unit cell structures include:</p>
+    <ul>
+        <li><strong>Simple Cubic (SC)</strong>: Atoms are present only at the corners.</li>
+        <li><strong>Body-Centered Cubic (BCC)</strong>: Atoms at corners and one in the center of the cube.</li>
+        <li><strong>Face-Centered Cubic (FCC)</strong>: Atoms at corners and at the center of each face.</li>
+    </ul>
+    <p>The <strong>coordination number</strong> indicates the number of nearest neighbors to an atom within the lattice.</p>
+
+    <!-- Packing Efficiency and Density Calculations -->
+    <h3>3. Packing Efficiency and Density Calculations</h3>
+    <p>Packing efficiency refers to the percentage of space occupied by atoms in a unit cell. Calculations for common unit cells:</p>
+    <div class="formula">Packing Efficiency (FCC) = 74%</div>
+    <div class="formula">Packing Efficiency (BCC) = 68%</div>
+    <p>The density (ρ) of a unit cell can be calculated as:</p>
+    <div class="formula">ρ = (Z * M) / (a³ * N<sub>A</sub>)</div>
+    <p>Where Z = number of atoms per unit cell, M = molar mass, a = edge length, and N<sub>A</sub> = Avogadro's number.</p>
+
+    <!-- Crystal Defects -->
+    <h3>4. Crystal Defects</h3>
+    <p>Crystals may contain <strong>defects</strong> that affect their properties. Common types of defects include:</p>
+    <ul>
+        <li><strong>Point Defects</strong>: Include vacancies (missing atoms) and interstitial defects (extra atoms).</li>
+        <li><strong>Line Defects</strong>: Dislocations in the lattice structure.</li>
+        <li><strong>Impurities</strong>: Foreign atoms in the lattice, affecting conductivity and strength.</li>
+    </ul>
+
+    <!-- Electrical and Magnetic Properties -->
+    <h3>5. Electrical and Magnetic Properties</h3>
+    <p>Solid materials exhibit different electrical and magnetic properties:</p>
+    <ul>
+        <li><strong>Conductors</strong>: Metals that allow electron flow (e.g., copper).</li>
+        <li><strong>Semiconductors</strong>: Materials with intermediate conductivity (e.g., silicon).</li>
+        <li><strong>Insulators</strong>: Do not conduct electricity (e.g., rubber).</li>
+        <li><strong>Diamagnetic</strong>: Weakly repelled by magnetic fields.</li>
+        <li><strong>Paramagnetic</strong>: Weakly attracted to magnetic fields.</li>
+        <li><strong>Ferromagnetic</strong>: Strongly attracted and retain magnetism (e.g., iron).</li>
+    </ul>
+
+    <!-- Applications of Solid State Chemistry -->
+    <h2>Applications of Solid State Chemistry</h2>
+    <p>Solid-state chemistry has applications in various fields, including:</p>
+    <ul>
+        <li><strong>Electronics</strong>: Semiconductors and magnetic materials in computers and smartphones.</li>
+        <li><strong>Construction</strong>: Ceramics and composites in building materials.</li>
+        <li><strong>Energy Storage</strong>: Lithium-ion batteries and fuel cells.</li>
+        <li><strong>Healthcare</strong>: Implants and bio-compatible materials.</li>
+    </ul>
+
+    <!-- Important Equations in Solid State Chemistry -->
+    <h2>Important Equations in Solid State Chemistry</h2>
+    <ul>
+        <li><strong>Density</strong>: ρ = (Z * M) / (a³ * N<sub>A</sub>)</li>
+        <li><strong>Packing Efficiency (FCC)</strong>: 74%</li>
+        <li><strong>Packing Efficiency (BCC)</strong>: 68%</li>
+    </ul>
+
+    <h2>Significance of Solid State Chemistry</h2>
+    <p>Solid state chemistry underpins the development of advanced materials, allowing for innovations in energy storage, electronics, and medical devices. Understanding the structure and properties of solids enables scientists to engineer materials with specific functionalities.</p>
+</div>
+
+<script>
+    function toggleMode() {
+        document.body.classList.toggle("dark-mode");
+    }
+</script>
+
+</body>
+</html>

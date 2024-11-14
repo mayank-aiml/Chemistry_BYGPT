@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thermodynamics - Chemistry</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+        h1, h2, h3 {
+            color: #007bff;
+        }
+        p {
+            line-height: 1.6;
+        }
+        .mode-toggle {
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .mode-toggle:hover {
+            background-color: #0056b3;
+        }
+        .formula {
+            background-color: #f4f4f9;
+            padding: 10px;
+            border-radius: 8px;
+            margin: 20px 0;
+            font-weight: bold;
+            color: #007bff;
+            text-align: center;
+        }
+        .dark-mode {
+            background-color: #2c2c2c;
+            color: #f1f1f1;
+        }
+        .dark-mode h1, .dark-mode h2, .dark-mode h3 {
+            color: #63a4ff;
+        }
+        .dark-mode .formula {
+            background-color: #333;
+            color: #63a4ff;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <button class="mode-toggle" onclick="toggleMode()">Toggle Dark Mode</button>
+    <h1>Thermodynamics</h1>
+    <p>
+        Thermodynamics is the study of energy transformations and the principles governing chemical reactions and processes. Key concepts in thermodynamics include systems, surroundings, state functions, enthalpy, entropy, and Gibbs free energy.
+    </p>
+
+    <h2>Key Concepts in Thermodynamics</h2>
+
+    <!-- Systems and Surroundings -->
+    <h3>1. Systems and Surroundings</h3>
+    <p>A <strong>system</strong> is the part of the universe under study, while the <strong>surroundings</strong> include everything outside the system. Systems are classified as:</p>
+    <ul>
+        <li><em>Open System</em>: Can exchange both energy and matter with surroundings.</li>
+        <li><em>Closed System</em>: Can exchange energy but not matter.</li>
+        <li><em>Isolated System</em>: No exchange of energy or matter.</li>
+    </ul>
+
+    <!-- First Law of Thermodynamics -->
+    <h3>2. First Law of Thermodynamics</h3>
+    <p>The first law of thermodynamics, also known as the law of energy conservation, states:</p>
+    <div class="formula">ΔU = q + w</div>
+    <p>where <em>ΔU</em> is the change in internal energy, <em>q</em> is the heat added to the system, and <em>w</em> is the work done on the system.</p>
+
+    <!-- Enthalpy -->
+    <h3>3. Enthalpy (H)</h3>
+    <p>Enthalpy is a measure of the total heat content of a system at constant pressure:</p>
+    <div class="formula">ΔH = ΔU + PΔV</div>
+    <p>where <em>ΔH</em> is the change in enthalpy, <em>P</em> is pressure, and <em>ΔV</em> is the change in volume.</p>
+    <p><strong>Endothermic</strong> reactions absorb heat (ΔH &gt; 0), while <strong>exothermic</strong> reactions release heat (ΔH &lt; 0).</p>
+
+    <!-- Second Law of Thermodynamics -->
+    <h3>4. Second Law of Thermodynamics</h3>
+    <p>The second law states that in any spontaneous process, the total entropy of the system and surroundings increases:</p>
+    <div class="formula">ΔS<sub>universe</sub> = ΔS<sub>system</sub> + ΔS<sub>surroundings</sub> > 0</div>
+    <p>Entropy (S) is a measure of randomness or disorder in a system.</p>
+
+    <!-- Gibbs Free Energy -->
+    <h3>5. Gibbs Free Energy (G)</h3>
+    <p>Gibbs free energy is a state function that predicts the spontaneity of a process at constant temperature and pressure:</p>
+    <div class="formula">ΔG = ΔH - TΔS</div>
+    <p>where <em>ΔG</em> is the change in Gibbs free energy, <em>T</em> is temperature in Kelvin, and <em>ΔS</em> is the change in entropy.</p>
+    <p>If ΔG &lt; 0, the process is spontaneous; if ΔG &gt; 0, it is non-spontaneous.</p>
+
+    <!-- Important Calculations in Thermodynamics -->
+    <h2>Important Calculations in Thermodynamics</h2>
+    <ul>
+        <li><strong>Heat and Work</strong>: Calculated for different processes such as isothermal and adiabatic.</li>
+        <li><strong>Entropy Changes</strong>: Calculated for reversible and irreversible processes.</li>
+        <li><strong>Standard Enthalpies</strong>: Calculated using Hess's Law and enthalpies of formation.</li>
+    </ul>
+
+    <!-- Applications of Thermodynamics -->
+    <h2>Applications of Thermodynamics</h2>
+    <p>Thermodynamics has broad applications in science and industry:</p>
+    <ul>
+        <li><strong>Industrial Processes</strong>: Knowledge of enthalpy and Gibbs free energy is crucial in designing reactors and predicting product yields.</li>
+        <li><strong>Biological Systems</strong>: Thermodynamics explains metabolic processes and energy transformations in living organisms.</li>
+        <li><strong>Environmental Science</strong>: Thermodynamic principles are applied to study energy efficiency and environmental impact.</li>
+    </ul>
+
+    <h2>Significance of Studying Thermodynamics</h2>
+    <p>Understanding thermodynamics is essential in fields such as chemistry, physics, engineering, and biology. It helps explain how and why reactions occur, predict the feasibility of processes, and optimize conditions for industrial applications.</p>
+</div>
+
+<script>
+    function toggleMode() {
+        document.body.classList.toggle("dark-mode");
+    }
+</script>
+
+</body>
+</html>

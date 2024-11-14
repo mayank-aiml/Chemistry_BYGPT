@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Some Basic Concepts of Chemistry</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+        h1, h2, h3 {
+            color: #007bff;
+        }
+        p {
+            line-height: 1.6;
+        }
+        .mode-toggle {
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .mode-toggle:hover {
+            background-color: #0056b3;
+        }
+        .formula {
+            background-color: #f4f4f9;
+            padding: 10px;
+            border-radius: 8px;
+            margin: 20px 0;
+            font-weight: bold;
+            color: #007bff;
+            text-align: center;
+        }
+        .dark-mode {
+            background-color: #2c2c2c;
+            color: #f1f1f1;
+        }
+        .dark-mode h1, .dark-mode h2, .dark-mode h3 {
+            color: #63a4ff;
+        }
+        .dark-mode .formula {
+            background-color: #333;
+            color: #63a4ff;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <button class="mode-toggle" onclick="toggleMode()">Toggle Dark Mode</button>
+    <h1>Some Basic Concepts of Chemistry</h1>
+    <p>
+        Chemistry is the branch of science that studies the composition, properties, and transformations of matter. This foundational chapter introduces essential concepts such as atoms, molecules, the mole concept, and chemical reactions.
+    </p>
+
+    <h2>Key Concepts in Chemistry</h2>
+
+    <!-- Matter and Its Classification -->
+    <h3>1. Matter and Its Classification</h3>
+    <p>Matter is anything that has mass and occupies space. It can exist in three physical states:</p>
+    <ul>
+        <li><strong>Solids</strong>: Definite shape and volume.</li>
+        <li><strong>Liquids</strong>: Definite volume but no definite shape.</li>
+        <li><strong>Gases</strong>: No definite shape or volume.</li>
+    </ul>
+    <p>Matter can also be classified as:</p>
+    <ul>
+        <li><strong>Pure Substances</strong>: Have a fixed composition, such as elements and compounds.</li>
+        <li><strong>Mixtures</strong>: Combinations of two or more pure substances that can be separated physically.</li>
+    </ul>
+
+    <!-- Atoms and Molecules -->
+    <h3>2. Atoms and Molecules</h3>
+    <p>Atoms are the basic units of matter. A molecule is a group of atoms bonded together. For example, an oxygen molecule (O<sub>2</sub>) contains two oxygen atoms bonded together.</p>
+
+    <!-- Mole Concept and Avogadro's Number -->
+    <h3>3. Mole Concept and Avogadro's Number</h3>
+    <p>The mole is a fundamental unit in chemistry used to measure the amount of substance. One mole contains Avogadro's number of entities (atoms, molecules, ions, etc.), which is:</p>
+    <div class="formula">6.022 × 10<sup>23</sup></div>
+    <p>This number helps relate macroscopic quantities to atomic-scale properties.</p>
+
+    <!-- Stoichiometry and Chemical Equations -->
+    <h3>4. Stoichiometry and Chemical Equations</h3>
+    <p>Stoichiometry is the quantitative study of reactants and products in a chemical reaction. A balanced chemical equation represents the exact proportions of reactants and products.</p>
+    <div class="formula">2 H<sub>2</sub> + O<sub>2</sub> → 2 H<sub>2</sub>O</div>
+    <p>This equation implies that 2 moles of hydrogen react with 1 mole of oxygen to produce 2 moles of water.</p>
+
+    <!-- Laws of Chemical Combination -->
+    <h3>5. Laws of Chemical Combination</h3>
+    <ul>
+        <li><strong>Law of Conservation of Mass</strong>: Mass is neither created nor destroyed in a chemical reaction.</li>
+        <li><strong>Law of Definite Proportions</strong>: A compound always contains elements in the same proportion by mass.</li>
+        <li><strong>Law of Multiple Proportions</strong>: If two elements combine in different ratios to form different compounds, their masses are in small whole numbers.</li>
+        <li><strong>Gay-Lussac’s Law</strong>: Gases react in simple whole-number volumes under the same conditions.</li>
+    </ul>
+
+    <!-- Empirical and Molecular Formula -->
+    <h3>6. Empirical and Molecular Formula</h3>
+    <p>The empirical formula shows the simplest whole-number ratio of atoms in a compound, while the molecular formula shows the actual number of each type of atom.</p>
+    <p>For example:</p>
+    <ul>
+        <li><strong>Empirical Formula</strong>: CH (benzene)</li>
+        <li><strong>Molecular Formula</strong>: C<sub>6</sub>H<sub>6</sub> (benzene)</li>
+    </ul>
+
+    <!-- Important Calculations in Basic Chemistry -->
+    <h2>Important Calculations in Basic Chemistry</h2>
+    <ul>
+        <li><strong>Molar Mass</strong>: Sum of the atomic masses of all atoms in a molecule.</li>
+        <li><strong>Percentage Composition</strong>: Percentage of each element in a compound.</li>
+        <li><strong>Empirical Formula Calculation</strong>: Based on elemental analysis data.</li>
+    </ul>
+
+    <!-- Applications of Basic Chemistry Concepts -->
+    <h2>Applications of Basic Chemistry Concepts</h2>
+    <p>Basic concepts of chemistry are essential in fields like pharmacology, environmental science, material science, and chemical engineering. Understanding these concepts allows scientists and engineers to develop new materials, analyze pollutants, and optimize industrial processes.</p>
+
+    <h2>Significance of Basic Chemistry</h2>
+    <p>Mastering the basic concepts of chemistry provides a foundation for exploring advanced topics and applying chemistry in real-world applications. It enables a deeper understanding of the interactions and transformations of matter, which are crucial to many scientific and technological advancements.</p>
+</div>
+
+<script>
+    function toggleMode() {
+        document.body.classList.toggle("dark-mode");
+    }
+</script>
+
+</body>
+</html>

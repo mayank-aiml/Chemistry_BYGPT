@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electrochemistry</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+        h1, h2, h3 {
+            color: #007bff;
+        }
+        p {
+            line-height: 1.6;
+        }
+        .mode-toggle {
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .mode-toggle:hover {
+            background-color: #0056b3;
+        }
+        .formula {
+            background-color: #f4f4f9;
+            padding: 10px;
+            border-radius: 8px;
+            margin: 20px 0;
+            font-weight: bold;
+            color: #007bff;
+            text-align: center;
+        }
+        .dark-mode {
+            background-color: #2c2c2c;
+            color: #f1f1f1;
+        }
+        .dark-mode h1, .dark-mode h2, .dark-mode h3 {
+            color: #63a4ff;
+        }
+        .dark-mode .formula {
+            background-color: #333;
+            color: #63a4ff;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <button class="mode-toggle" onclick="toggleMode()">Toggle Dark Mode</button>
+    <h1>Electrochemistry</h1>
+    <p>
+        Electrochemistry studies chemical reactions involving electron transfer, where chemical energy is converted into electrical energy and vice versa. It encompasses phenomena like electrolysis, galvanic cells, and battery technology.
+    </p>
+
+    <h2>Fundamental Concepts in Electrochemistry</h2>
+
+    <!-- Electrochemical Cells -->
+    <h3>1. Electrochemical Cells</h3>
+    <p>An <strong>electrochemical cell</strong> is a system where redox reactions occur, and electron transfer generates electric current. The two main types are:</p>
+    <ul>
+        <li><strong>Galvanic Cells (Voltaic Cells)</strong>: These produce electrical energy through spontaneous redox reactions (e.g., batteries).</li>
+        <li><strong>Electrolytic Cells</strong>: Electrical energy drives non-spontaneous chemical reactions (e.g., electroplating).</li>
+    </ul>
+
+    <!-- Redox Reactions -->
+    <h3>2. Redox Reactions</h3>
+    <p>Redox reactions involve two processes: oxidation (loss of electrons) and reduction (gain of electrons). In an electrochemical cell:</p>
+    <ul>
+        <li>The <strong>Anode</strong> is where oxidation occurs.</li>
+        <li>The <strong>Cathode</strong> is where reduction occurs.</li>
+    </ul>
+
+    <!-- Electrode Potential and Nernst Equation -->
+    <h3>3. Electrode Potential</h3>
+    <p>Electrode potential is the measure of a half-cell's ability to attract or repel electrons. Standard electrode potentials (E°) are measured relative to the standard hydrogen electrode (SHE), set at 0 volts. The Nernst equation allows us to calculate cell potential under non-standard conditions:</p>
+    <div class="formula">E = E° - (RT/nF) * lnQ</div>
+    <p>Where E is the cell potential, E° is the standard electrode potential, R is the gas constant, T is temperature, n is the number of moles of electrons, F is Faraday’s constant, and Q is the reaction quotient.</p>
+
+    <!-- Faraday's Laws of Electrolysis -->
+    <h3>4. Faraday's Laws of Electrolysis</h3>
+    <p>These laws quantify the relationship between the amount of substance produced or consumed at an electrode and the amount of electric charge passed through the electrolyte:</p>
+    <ul>
+        <li><strong>First Law</strong>: The amount of substance deposited at an electrode is directly proportional to the quantity of electricity (charge) passed.</li>
+        <li><strong>Second Law</strong>: For the same quantity of electricity, the amount of substance deposited is inversely proportional to its equivalent weight.</li>
+    </ul>
+    <div class="formula">m = (Q * M) / (n * F)</div>
+    <p>Where m is the mass of the substance, Q is the charge, M is molar mass, n is the number of electrons, and F is Faraday’s constant (96,485 C/mol).</p>
+
+    <!-- Conductance and Kohlrausch's Law -->
+    <h3>5. Conductance in Electrolytes</h3>
+    <p>The conductance of an electrolyte solution is its ability to conduct electricity. It depends on ion concentration, mobility, and temperature. Key concepts include:</p>
+    <ul>
+        <li><strong>Molar Conductivity (Λ<sub>m</sub>)</strong>: Conductance of an electrolyte solution containing 1 mole of solute per liter.</li>
+        <li><strong>Kohlrausch's Law</strong>: States that at infinite dilution, each ion contributes a fixed value to the molar conductivity, independent of the other ions.</li>
+    </ul>
+
+    <!-- Applications of Electrochemistry -->
+    <h2>Applications of Electrochemistry</h2>
+    <p>Electrochemistry is crucial in many fields, such as:</p>
+    <ul>
+        <li><strong>Batteries</strong>: Used in powering devices from smartphones to electric vehicles.</li>
+        <li><strong>Electrolysis</strong>: Used in metal extraction, electroplating, and water splitting for hydrogen production.</li>
+        <li><strong>Corrosion Prevention</strong>: Techniques like cathodic protection help protect metals from rusting.</li>
+        <li><strong>Fuel Cells</strong>: Convert chemical energy into electrical energy, used in clean energy applications.</li>
+    </ul>
+
+    <!-- Important Electrochemical Equations -->
+    <h2>Important Electrochemical Equations</h2>
+    <ul>
+        <li><strong>Nernst Equation</strong>: E = E° - (RT/nF) * lnQ</li>
+        <li><strong>Faraday's First Law</strong>: m = (Q * M) / (n * F)</li>
+        <li><strong>Relation Between Gibbs Free Energy and Cell Potential</strong>: ΔG = -nFE</li>
+    </ul>
+
+    <h2>Practical Implications of Electrochemistry</h2>
+    <p>Electrochemistry plays a vital role in sustainable energy solutions. Innovations in battery technology and fuel cells contribute to renewable energy advancements, while understanding corrosion and electroplating supports industries in maintaining material integrity.</p>
+</div>
+
+<script>
+    function toggleMode() {
+        document.body.classList.toggle("dark-mode");
+    }
+</script>
+
+</body>
+</html>

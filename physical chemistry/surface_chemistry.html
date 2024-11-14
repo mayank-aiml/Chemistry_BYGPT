@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surface Chemistry - Chemistry</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+        h1, h2, h3 {
+            color: #007bff;
+        }
+        p {
+            line-height: 1.6;
+        }
+        .mode-toggle {
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .mode-toggle:hover {
+            background-color: #0056b3;
+        }
+        .formula {
+            background-color: #f4f4f9;
+            padding: 10px;
+            border-radius: 8px;
+            margin: 20px 0;
+            font-weight: bold;
+            color: #007bff;
+            text-align: center;
+        }
+        .dark-mode {
+            background-color: #2c2c2c;
+            color: #f1f1f1;
+        }
+        .dark-mode h1, .dark-mode h2, .dark-mode h3 {
+            color: #63a4ff;
+        }
+        .dark-mode .formula {
+            background-color: #333;
+            color: #63a4ff;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <button class="mode-toggle" onclick="toggleMode()">Toggle Dark Mode</button>
+    <h1>Surface Chemistry</h1>
+    <p>
+        Surface chemistry is the study of phenomena that occur at the surfaces or interfaces of materials. This includes adsorption, catalysis, and the behavior of colloidal systems. Surface chemistry is critical in fields like material science, environmental science, and industrial chemistry.
+    </p>
+
+    <h2>Key Concepts in Surface Chemistry</h2>
+
+    <!-- Adsorption -->
+    <h3>1. Adsorption</h3>
+    <p>Adsorption is the accumulation of molecules on a surface, forming an adsorbed layer:</p>
+    <ul>
+        <li><strong>Types of Adsorption</strong>:
+            <ul>
+                <li><em>Physical Adsorption</em> (Physisorption): Weak van der Waals forces hold the adsorbate to the surface.</li>
+                <li><em>Chemical Adsorption</em> (Chemisorption): Strong chemical bonds form between adsorbate and surface.</li>
+            </ul>
+        </li>
+        <li><strong>Factors Affecting Adsorption</strong>: Temperature, pressure, and surface area all impact the extent of adsorption.</li>
+    </ul>
+
+    <!-- Freundlich Adsorption Isotherm -->
+    <h3>2. Freundlich Adsorption Isotherm</h3>
+    <p>This empirical isotherm describes adsorption on heterogeneous surfaces:</p>
+    <div class="formula">x/m = kP<sup>1/n</sup></div>
+    <p>where <em>x</em> is the mass of adsorbate, <em>m</em> is the mass of adsorbent, <em>P</em> is the pressure, and <em>k</em> and <em>n</em> are constants.</p>
+
+    <!-- Catalysis -->
+    <h3>3. Catalysis</h3>
+    <p>A catalyst speeds up a chemical reaction by providing an alternative reaction pathway with a lower activation energy:</p>
+    <ul>
+        <li><strong>Types of Catalysis</strong>:
+            <ul>
+                <li><em>Homogeneous Catalysis</em>: Catalyst and reactants are in the same phase.</li>
+                <li><em>Heterogeneous Catalysis</em>: Catalyst is in a different phase than the reactants (e.g., solid catalyst with gas or liquid reactants).</li>
+            </ul>
+        </li>
+        <li><strong>Mechanism of Catalysis</strong>: Adsorption of reactants on the catalyst surface helps weaken bonds, facilitating reaction.</li>
+    </ul>
+
+    <!-- Enzyme Catalysis -->
+    <h3>4. Enzyme Catalysis</h3>
+    <p>Enzymes are biological catalysts that accelerate biochemical reactions. The enzyme binds to a specific substrate at its active site, forming an enzyme-substrate complex.</p>
+
+    <!-- Colloids -->
+    <h3>5. Colloids</h3>
+    <p>A colloid is a mixture where fine particles are dispersed within a continuous medium. Colloids exhibit properties that are intermediate between solutions and suspensions.</p>
+    <ul>
+        <li><strong>Types of Colloidal Systems</strong>: Classified based on the phase of the dispersed substance and the dispersing medium (e.g., aerosol, emulsion, sol, foam).</li>
+        <li><strong>Properties of Colloids</strong>: Includes the Tyndall effect, Brownian motion, and electrophoresis.</li>
+    </ul>
+
+    <!-- Emulsions -->
+    <h3>6. Emulsions</h3>
+    <p>Emulsions are colloidal systems where liquid droplets are dispersed in another liquid. They are classified as:</p>
+    <ul>
+        <li><strong>Oil-in-Water Emulsion</strong>: Oil droplets dispersed in water (e.g., milk).</li>
+        <li><strong>Water-in-Oil Emulsion</strong>: Water droplets dispersed in oil (e.g., butter).</li>
+    </ul>
+
+    <!-- Important Calculations in Surface Chemistry -->
+    <h2>Important Calculations in Surface Chemistry</h2>
+    <ul>
+        <li><strong>Surface Area</strong>: Calculated based on the geometry and particle size of the adsorbent.</li>
+        <li><strong>Extent of Adsorption</strong>: Often measured as the amount of adsorbate per unit mass of adsorbent (x/m).</li>
+        <li><strong>Enzyme Kinetics</strong>: Describes reaction rates and is represented by the Michaelis-Menten equation.</li>
+    </ul>
+
+    <!-- Applications of Surface Chemistry -->
+    <h2>Applications of Surface Chemistry</h2>
+    <p>Surface chemistry has numerous applications across various industries:</p>
+    <ul>
+        <li><strong>Environmental Science</strong>: Adsorption processes are used in pollution control (e.g., activated charcoal filters).</li>
+        <li><strong>Catalysis</strong>: Catalysts are critical in industrial processes like petroleum refining and synthesis of chemicals.</li>
+        <li><strong>Medicine</strong>: Colloids and emulsions play a role in drug delivery systems.</li>
+    </ul>
+
+    <h2>Significance of Studying Surface Chemistry</h2>
+    <p>Understanding surface chemistry is essential for fields such as environmental science, industrial chemistry, and pharmacology. It enables control over reactions and processes that take place at interfaces.</p>
+</div>
+
+<script>
+    function toggleMode() {
+        document.body.classList.toggle("dark-mode");
+    }
+</script>
+
+</body>
+</html>

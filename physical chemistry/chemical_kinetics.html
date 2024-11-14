@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chemical Thermodynamics</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+        h1, h2, h3 {
+            color: #007bff;
+        }
+        p {
+            line-height: 1.6;
+        }
+        .mode-toggle {
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .mode-toggle:hover {
+            background-color: #0056b3;
+        }
+        .formula {
+            background-color: #f4f4f9;
+            padding: 10px;
+            border-radius: 8px;
+            margin: 20px 0;
+            font-weight: bold;
+            color: #007bff;
+            text-align: center;
+        }
+        .dark-mode {
+            background-color: #2c2c2c;
+            color: #f1f1f1;
+        }
+        .dark-mode h1, .dark-mode h2, .dark-mode h3 {
+            color: #63a4ff;
+        }
+        .dark-mode .formula {
+            background-color: #333;
+            color: #63a4ff;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <button class="mode-toggle" onclick="toggleMode()">Toggle Dark Mode</button>
+    <h1>Chemical Thermodynamics</h1>
+    <p>
+        Chemical Thermodynamics is a branch of physical chemistry that focuses on the study of energy transformations during chemical reactions and phase changes. It provides insights into the feasibility and extent of chemical processes. 
+    </p>
+    <h2>Fundamental Concepts in Thermodynamics</h2>
+
+    <!-- Overview of Laws of Thermodynamics -->
+    <h3>1. Laws of Thermodynamics</h3>
+    <p><strong>First Law of Thermodynamics</strong>: States that energy cannot be created or destroyed, only transferred or transformed. This is also known as the law of energy conservation, with the equation:</p>
+    <div class="formula">ΔU = Q - W</div>
+    <p>where ΔU is the change in internal energy, Q is the heat added to the system, and W is the work done by the system.</p>
+
+    <p><strong>Second Law of Thermodynamics</strong>: This law introduces the concept of entropy, asserting that in any spontaneous process, the total entropy of the universe increases. It indicates the natural tendency towards disorder.</p>
+
+    <p><strong>Third Law of Thermodynamics</strong>: As a system approaches absolute zero (0 Kelvin), the entropy of a perfect crystal approaches zero, reflecting a state of perfect order.</p>
+
+    <!-- Types of Systems -->
+    <h3>2. Types of Systems</h3>
+    <p>In thermodynamics, a <strong>system</strong> refers to the part of the universe being studied, while everything else is the <strong>surroundings</strong>. Systems are classified into:</p>
+    <ul>
+        <li><strong>Open System</strong>: Exchanges both matter and energy with surroundings (e.g., boiling water in an open pot).</li>
+        <li><strong>Closed System</strong>: Exchanges only energy with surroundings, not matter (e.g., water in a sealed container).</li>
+        <li><strong>Isolated System</strong>: Does not exchange either matter or energy with surroundings (e.g., an insulated thermos bottle).</li>
+    </ul>
+
+    <!-- Enthalpy -->
+    <h3>3. Enthalpy (H)</h3>
+    <p>Enthalpy is a thermodynamic property representing the total heat content of a system. The change in enthalpy (ΔH) during a chemical reaction helps determine whether it is <strong>exothermic</strong> (releases heat) or <strong>endothermic</strong> (absorbs heat).</p>
+    <div class="formula">ΔH = H(products) - H(reactants)</div>
+    <p>In an exothermic reaction, ΔH is negative, while in an endothermic reaction, ΔH is positive.</p>
+
+    <!-- Entropy -->
+    <h3>4. Entropy (S)</h3>
+    <p>Entropy is a measure of the randomness or disorder within a system. Greater disorder correlates with higher entropy. Entropy changes (ΔS) can indicate the spontaneity of processes, as spontaneous reactions often result in increased disorder.</p>
+    <div class="formula">ΔS = S(products) - S(reactants)</div>
+
+    <!-- Gibbs Free Energy -->
+    <h3>5. Gibbs Free Energy (G)</h3>
+    <p>Gibbs Free Energy is a thermodynamic potential used to predict the spontaneity of a reaction. The equation for Gibbs free energy change is:</p>
+    <div class="formula">ΔG = ΔH - T * ΔS</div>
+    <p>If ΔG is negative, the reaction is spontaneous. If positive, the reaction is non-spontaneous. If zero, the reaction is in equilibrium.</p>
+
+    <!-- Spontaneity and Equilibrium -->
+    <h3>6. Spontaneity and Equilibrium</h3>
+    <p>A process is spontaneous if it occurs without external intervention. Thermodynamics predicts spontaneity through the relationship between ΔG, ΔH, and ΔS. At equilibrium, ΔG = 0, indicating no net change.</p>
+
+    <!-- Additional Thermodynamic Equations -->
+    <h3>7. Important Equations in Thermodynamics</h3>
+    <ul>
+        <li><strong>Heat (q)</strong>: q = mcΔT, where m = mass, c = specific heat, ΔT = temperature change.</li>
+        <li><strong>Work (W)</strong>: W = -PΔV, where P = pressure, ΔV = volume change.</li>
+        <li><strong>Entropy (S) and Heat</strong>: ΔS = q_rev / T, where q_rev = reversible heat, T = temperature.</li>
+    </ul>
+
+    <h2>Applications of Chemical Thermodynamics</h2>
+    <p>Chemical thermodynamics provides insights into various phenomena, such as the behavior of gases, phase transitions, and chemical equilibria. It’s crucial in fields like energy production, materials science, and environmental science, enabling advancements in power generation, chemical synthesis, and the study of environmental impacts.</p>
+</div>
+
+<script>
+    function toggleMode() {
+        document.body.classList.toggle("dark-mode");
+    }
+</script>
+
+</body>
+</html>

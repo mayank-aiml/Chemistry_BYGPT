@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuclear Chemistry and Radioactivity</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+        h1, h2, h3 {
+            color: #007bff;
+        }
+        p {
+            line-height: 1.6;
+        }
+        .mode-toggle {
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .mode-toggle:hover {
+            background-color: #0056b3;
+        }
+        .formula {
+            background-color: #f4f4f9;
+            padding: 10px;
+            border-radius: 8px;
+            margin: 20px 0;
+            font-weight: bold;
+            color: #007bff;
+            text-align: center;
+        }
+        .dark-mode {
+            background-color: #2c2c2c;
+            color: #f1f1f1;
+        }
+        .dark-mode h1, .dark-mode h2, .dark-mode h3 {
+            color: #63a4ff;
+        }
+        .dark-mode .formula {
+            background-color: #333;
+            color: #63a4ff;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <button class="mode-toggle" onclick="toggleMode()">Toggle Dark Mode</button>
+    <h1>Nuclear Chemistry and Radioactivity</h1>
+    <p>
+        Nuclear Chemistry deals with the nucleus of the atom, focusing on nuclear reactions and radioactive decay. It encompasses the study of stability, isotopes, fission, fusion, and radiation.
+    </p>
+
+    <h2>Fundamental Concepts in Nuclear Chemistry</h2>
+
+    <!-- Types of Radioactive Decay -->
+    <h3>1. Types of Radioactive Decay</h3>
+    <p>Radioactive decay is the spontaneous transformation of an unstable nucleus into a more stable one, releasing radiation in the process. The major types of decay include:</p>
+    <ul>
+        <li><strong>Alpha (α) Decay</strong>: Emission of an alpha particle (2 protons, 2 neutrons). This reduces the atomic number by 2 and the mass number by 4.</li>
+        <li><strong>Beta (β) Decay</strong>: Emission of a beta particle (electron or positron), transforming a neutron into a proton or vice versa, altering the atomic number by ±1.</li>
+        <li><strong>Gamma (γ) Decay</strong>: Emission of gamma rays (high-energy photons) without changing the atomic number or mass. Often follows α or β decay to release excess energy.</li>
+    </ul>
+
+    <!-- Half-Life and Radioactive Decay Law -->
+    <h3>2. Half-Life and Radioactive Decay Law</h3>
+    <p>The <strong>half-life</strong> (t<sub>1/2</sub>) is the time taken for half of a radioactive substance to decay. The decay rate follows a first-order kinetics:</p>
+    <div class="formula">N = N<sub>0</sub> e<sup>-λt</sup></div>
+    <p>Where N is the remaining quantity, N<sub>0</sub> is the initial quantity, λ is the decay constant, and t is time.</p>
+    <p>The relationship between half-life and decay constant is:</p>
+    <div class="formula">t<sub>1/2</sub> = 0.693 / λ</div>
+
+    <!-- Nuclear Stability and Binding Energy -->
+    <h3>3. Nuclear Stability and Binding Energy</h3>
+    <p>The stability of a nucleus depends on the neutron-to-proton ratio. Stable nuclei generally follow the <strong>belt of stability</strong>, where the neutron-proton ratio is optimal. Binding energy, the energy needed to disassemble a nucleus, indicates stability. The <strong>mass defect</strong> represents the difference between the mass of a nucleus and the sum of its constituent protons and neutrons.</p>
+    <div class="formula">E<sub>b</sub> = Δm * c<sup>2</sup></div>
+    <p>Where E<sub>b</sub> is the binding energy, Δm is the mass defect, and c is the speed of light.</p>
+
+    <!-- Nuclear Reactions -->
+    <h3>4. Nuclear Reactions</h3>
+    <p>Nuclear reactions involve changes in the nucleus and are distinct from chemical reactions. Examples include:</p>
+    <ul>
+        <li><strong>Nuclear Fission</strong>: Splitting a heavy nucleus (e.g., U-235) into two lighter nuclei, releasing a large amount of energy. Used in nuclear power plants.</li>
+        <li><strong>Nuclear Fusion</strong>: Combining light nuclei (e.g., hydrogen isotopes) to form a heavier nucleus, releasing even greater energy. Fusion powers stars, including the Sun.</li>
+    </ul>
+
+    <!-- Applications of Radioactivity and Nuclear Chemistry -->
+    <h2>Applications of Radioactivity and Nuclear Chemistry</h2>
+    <p>Radioactivity and nuclear chemistry have numerous applications:</p>
+    <ul>
+        <li><strong>Medical Imaging and Therapy</strong>: Isotopes like iodine-131 are used in diagnosing and treating conditions like thyroid disorders.</li>
+        <li><strong>Carbon Dating</strong>: Carbon-14 dating is used to determine the age of ancient artifacts by measuring radioactive decay.</li>
+        <li><strong>Nuclear Power</strong>: Fission reactions provide a major energy source for electricity generation in nuclear reactors.</li>
+        <li><strong>Space Exploration</strong>: Radioisotope thermoelectric generators (RTGs) use radioactive decay to generate power for deep-space probes.</li>
+    </ul>
+
+    <!-- Key Equations and Constants in Nuclear Chemistry -->
+    <h2>Key Equations and Constants in Nuclear Chemistry</h2>
+    <ul>
+        <li><strong>Decay Law</strong>: N = N<sub>0</sub> e<sup>-λt</sup></li>
+        <li><strong>Half-Life</strong>: t<sub>1/2</sub> = 0.693 / λ</li>
+        <li><strong>Binding Energy</strong>: E<sub>b</sub> = Δm * c<sup>2</sup></li>
+    </ul>
+
+    <h2>Practical Implications of Nuclear Chemistry</h2>
+    <p>Understanding nuclear chemistry is critical for applications in medicine, energy, and scientific research. Techniques like nuclear imaging help diagnose diseases, while nuclear power provides a low-carbon energy source. However, handling radioactive materials requires safety precautions to protect against radiation exposure.</p>
+</div>
+
+<script>
+    function toggleMode() {
+        document.body.classList.toggle("dark-mode");
+    }
+</script>
+
+</body>
+</html>
